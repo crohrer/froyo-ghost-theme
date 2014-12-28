@@ -1,0 +1,605 @@
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+
+/*
+
+    0.  Normalize
+    1.  Icons
+    2.  General
+    3.  Utilities
+    4.  General
+    5. Media Queries (Tablet)
+    6. Media Queries (Mobile)
+
+ */
+
+@import "partials/normalize";
+@import "partials/icons";
+@import "partials/general";
+@import "partials/utilities";
+
+
+/* ==========================================================================
+   4. General - The main styles for the the theme
+   ========================================================================== */
+
+main {
+    background-color: #fff;
+}
+
+.post-template .inner {
+    max-width: 700px;
+}
+
+.header-container, .site-head {
+    height: 240px;
+}
+
+.home-template {
+    .header-container, .site-head {
+        height: 400px;
+    }
+}
+
+.logo {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.home-template .logo {
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.header-container {
+    position: relative;
+}
+
+.header-text {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.site-head {
+    display: table;
+    width: 100%;
+    top: 0;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    z-index: -1;
+}
+
+.home-template h1.blog-title {
+    font-size: 5.2rem;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+h1.blog-title {
+    font-size: 38px;
+    font-size: 3.8rem;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    margin-bottom: 5px;
+}
+
+.blog-description {
+    font-size: 19px;
+    font-size: 1.9rem;
+    letter-spacing: 0.2px;
+}
+
+.main-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgb(247, 97, 97);
+    background-color: rgba(247, 97, 97, 0.85);
+    z-index: 100;
+    text-align: center;
+}
+
+.main-nav-fixed {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: auto;
+    text-align: right;
+}
+
+.main-nav ul {
+    padding: 0;
+    margin: 0;
+    /*margin-right: 4%;*/
+    display: inline-block;
+}
+
+.main-nav-fixed ul {
+    margin-right: 2%;
+}
+
+.main-nav {
+    li {
+        display: inline-block;
+        padding: 5px 6px;
+        a {
+            color: #fff;
+            font-size: 14px;
+            font-size: 1.4rem;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            &:hover {
+                color: rgb(250, 180, 180);
+            }
+        }
+    }
+    .fa {
+        margin-right: 2px;
+        font-size: 1.6rem;
+    }
+}
+
+.nav-home-btn {
+    line-height: 1;
+    padding: 5px 8px 4px;
+    background-color: rgb(250, 150, 150);
+    border-radius: 2px;
+    letter-spacing: 0.5px;
+}
+
+main {
+    background-color: #fff;
+}
+
+.post-item {
+    padding: 60px 0;
+    border-top: solid 1px #eaeaea;
+    &:first-child {
+        border-top: none;
+    }
+    &:nth-child(even) {
+        background-color: #f8f8f8;
+    }
+}
+
+.post-item-title {
+    font-size: 28px;
+    font-size: 2.8rem;
+    line-height: 1.2em;
+    letter-spacing: -0.2px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.col-aside, .post-excerpt, .post-item-title, .author-info {
+    display: inline-block;
+}
+
+.post-preview > .col-aside {
+    vertical-align: top;
+}
+
+.post-excerpt {
+    width: 70%;
+    p {
+        margin-bottom: 0;
+    }
+    .btn {
+        margin-top: 30px;
+    }
+}
+
+.post-item-time {
+    padding-bottom: 2px;
+    border-bottom: solid 1px #eaeaea;
+}
+
+.post-item-tags {
+    display: block;
+}
+
+.post-meta {
+    font-size: 14px;
+    font-size: 1.4rem;
+    time {
+        display: block;
+    }
+}
+
+.site-footer {
+    padding: 50px 0;
+    font-size: 15px;
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+    background-color: #333f49;
+    color: #fff;
+    text-align: center;
+    a {
+        color: #f76161;
+        text-decoration: none;
+        &:hover {
+            color: #A3BED6;
+        }
+    }
+}
+
+.post {
+    padding: 80px 0;
+}
+
+.post-header {
+    letter-spacing: -1px;
+    margin: 20px 0 40px;
+    text-align: center;
+    hr {
+        height: 3px;
+        border-top: solid 1px #eaeaea;
+        background-color: #f7f7f7;
+        margin-bottom: 0;
+    }
+}
+
+.post-title {
+    font-size: 44px;
+    font-size: 4.4rem;
+    margin-bottom: 10px;
+}
+
+.post-header time {
+    font-size: 15px;
+    font-size: 1.5rem;
+    letter-spacing: 0.1px;
+}
+
+.post-content {
+    letter-spacing: 0.4px;
+}
+
+.post-author {
+    padding: 35px 0 25px;
+    background-color: #f8f8f8;
+    border-top: solid 1px #eaeaea;
+    border-bottom: solid 1px #eaeaea;
+    margin-top: 50px;
+}
+
+.author-image-container {
+    background: #f8f8f8;
+}
+
+.author-image {
+    max-width: 100px;
+    border-radius: 55px;
+    border: solid 5px #fff;
+}
+
+.author-info {
+    width: 72%;
+    margin-left: -5%;
+    vertical-align: top;
+    display: inline-block;
+    h4 {
+        font-size: 26px;
+        font-size: 2.6rem;
+        font-weight: 300;
+        margin: 10px 0 5px;
+    }
+    p:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.post-share {
+    margin: 40px 0 30px;
+    padding: 15px 0;
+    border-top: solid 1px #eaeaea;
+    border-bottom: solid 1px #eaeaea;
+}
+
+.post-share-icons {
+    float: right;
+    margin-top: -5px;
+}
+
+.post-share {
+    .fa {
+        margin-left: 5px;
+        color: #444;
+        &:hover {
+            color: rgb(247, 97, 97);
+        }
+    }
+    h6 {
+        font-size: 18px;
+        font-size: 1.8rem;
+        margin-bottom: 0;
+        color: #444;
+    }
+}
+
+.post-tags {
+    a {
+        font-size: 15px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-style: italic;
+    }
+    .fa-tags {
+        font-size: 14px;
+        font-size: 1.4rem;
+        color: #444;
+        margin-right: 5px;
+    }
+}
+
+.post-item-tags {
+    margin-bottom: 90px;
+    padding-top: 8px;
+    border-top: solid 3px #f7f7f7;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    line-height: 1.45em;
+    margin: 0 0 20px;
+    .fa-tags {
+        font-size: 12px;
+        font-size: 1.2rem;
+        color: #444;
+        margin-right: 2px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.post-item:nth-child(even) .post-item-tags {
+    border-top: solid 4px #f1f1f1;
+}
+
+.pagination {
+    font-size: 15px;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    text-align: center;
+    border-top: solid 1px #eaeaea;
+    a {
+        color: #4c4c4c;
+        text-decoration: none;
+        &:hover {
+            color: rgb(247, 97, 97);
+        }
+    }
+}
+
+.page-number {
+    padding: 0 20px;
+}
+
+.newer-posts {
+    float: left;
+    padding-left: 2%;
+}
+
+.older-posts {
+    float: right;
+    padding-right: 2%;
+}
+
+.pagination-none {
+    color: #ccc;
+}
+
+.tag-archive-header h6 {
+    text-align: center;
+    padding: 25px 0;
+    margin: 0;
+    color: #bbb;
+    font-size: 18 xp;
+    font-size: 1.8rem;
+    letter-spacing: 0.2px;
+}
+
+#disqus_thread {
+    margin-top: 60px;
+    background-color: #fff;
+}
+
+/* ==========================================================================
+   5. Media Queries - Smaller than 900px
+   ========================================================================== */
+
+@media only screen and (max-width: 900px) {
+    .home-template {
+        .header-container, .site-head {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            height: auto;
+            min-height: 240px;
+        }
+    }
+    h1.blog-title, .home-template h1.blog-title {
+        font-size: 44px;
+        font-size: 4.4rem;
+        letter-spacing: -1px;
+        margin: 0 20px;
+    }
+    .blog-description {
+        font-size: 17px;
+        font-size: 1.7rem;
+        line-height: 1.5em;
+    }
+    h1 {
+        font-size: 48px;
+        font-size: 4.8rem;
+        text-indent: -2px;
+    }
+    h2 {
+        font-size: 38px;
+        font-size: 3.8rem;
+    }
+    h3 {
+        font-size: 33px;
+        font-size: 3.3rem;
+    }
+    h4 {
+        font-size: 28px;
+        font-size: 2.8rem;
+    }
+    .post-template {
+        .post {
+            padding-bottom: 1rem;
+        }
+        .post-header {
+            padding: 40px 0;
+        }
+    }
+    .author-info {
+        width: 70%;
+        margin-left: 0;
+    }
+}
+
+/* ==========================================================================
+   6. Media Queries - Smaller than 600px
+   ========================================================================== */
+
+@media only screen and (max-width: 600px) {
+    .home-template {
+        .header-container, .site-head {
+            height: 240px;
+        }
+    }
+    .blog-logo img {
+        max-height: 80px;
+    }
+    .inner {
+        width: auto;
+        padding: 0 6%;
+    }
+    .blog-title {
+        font-size: 30px;
+        font-size: 3rem;
+    }
+    .blog-description {
+        font-size: 1.5px;
+        font-size: 1.5rem;
+    }
+    h1, h2 {
+        font-size: 30px;
+        font-size: 3rem;
+        line-height: 1.1em;
+        letter-spacing: -1px;
+    }
+    h3 {
+        font-size: 28px;
+        font-size: 2.8rem;
+    }
+    h4 {
+        font-size: 23px;
+        font-size: 2.3rem;
+    }
+    .post, .post-item {
+        width: auto;
+        font-size: 1em;
+        line-height: 1.5em;
+        letter-spacing: 0.5px;
+        padding: 40px 0;
+    }
+    .post-item-header .col-aside {
+        display: none;
+    }
+    .post-item-title {
+        width: 100%;
+        display: block;
+        font-size: 28px;
+        font-size: 2.8rem;
+        /*text-align: center;*/
+        margin-bottom: 30px;
+    }
+    .post-preview .col-aside, .post-excerpt {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .post-item-time {
+        padding-bottom: 5px;
+    }
+    .post-template .post-header {
+        padding: 20px 0 0;
+        hr {
+            margin: 25px 0 20px;
+        }
+    }
+    .post-content img {
+        padding: 0;
+    }
+    .post-meta {
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+    .pagination {
+        padding: 20px 10px;
+        font-size: 13px;
+        font-size: 1.3rem;
+    }
+    .post-title {
+        font-size: 36px;
+        font-size: 3.6rem;
+    }
+    .site-footer {
+        padding-top: 50px;
+        font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 1.5em;
+    }
+    .poweredby {
+        margin-top: 10px;
+    }
+    .post-share {
+        margin-bottom: 20px;
+        h6 {
+            font-size: 16px;
+            font-size: 1.6rem;
+        }
+    }
+    .post-tags {
+        margin-bottom: 0;
+    }
+    .post-author {
+        margin-top: 40px;
+        padding: 25px 0 15px;
+    }
+    .author-image-container {
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+    .author-info {
+        display: block;
+        width: 100%;
+        margin: 0;
+        margin-top: -10px;
+        h4 {
+            text-align: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: solid 1px #eaeaea;
+        }
+    }
+    .author-image {
+        width: 80px;
+        border-radius: 45px;
+    }
+    #disqus_thread {
+        margin: 30px 0;
+    }
+}
