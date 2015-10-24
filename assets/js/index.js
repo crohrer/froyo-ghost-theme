@@ -5,22 +5,6 @@
 
         $(".post-content").fitVids();
 
-        function casperFullImg() {
-            $("img").each( function() {
-                var contentWidth = $(".post-content").outerWidth(); // Width of the content
-                var imageWidth = $(this)[0].naturalWidth; // Original image resolution
-
-                if (imageWidth >= contentWidth) {
-                    $(this).addClass('full-img');
-                } else {
-                    $(this).removeClass('full-img');
-                }
-            });
-        };
-
-        casperFullImg();
-        $(window).smartresize(casperFullImg);
-
     });
 
 }(jQuery));
