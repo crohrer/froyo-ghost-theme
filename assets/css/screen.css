@@ -16,14 +16,17 @@
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
 
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block; }
 
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-[hidden], template {
+[hidden],
+template {
   display: none; }
 
 html {
@@ -63,7 +66,10 @@ mark {
   background: #ff0;
   color: #000; }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, serif;
   font-size: 1em; }
 
@@ -110,31 +116,40 @@ legend {
   border: 0;
   padding: 0; }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0; }
 
-button, input {
+button,
+input {
   line-height: normal; }
 
-button, select {
+button,
+select {
   text-transform: none; }
 
-button, html input[type="button"] {
+button,
+html input[type="button"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
-input[type="reset"], input[type="submit"] {
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
-button[disabled], html input[disabled] {
+button[disabled],
+html input[disabled] {
   cursor: default; }
 
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0; }
+
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -143,7 +158,8 @@ input[type="search"] {
   input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none; }
 
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -161,13 +177,17 @@ table {
 /* Import the font file with the icons in it */
 @font-face {
   font-family: 'icons';
-  src: url('../fonts/icons.eot');
-  src: url('../fonts/icons.eot?#iefix') format("embedded-opentype"), url('../fonts/icons.woff') format("woff"), url('../fonts/icons.ttf') format("truetype"), url('../fonts/icons.svg#icons') format("svg");
+  src: url("../fonts/icons.eot");
+  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 /* Apply these base styles to all icons */
-.icon-ghost:before, .icon-feed:before, .icon-twitter:before, .icon-google-plus:before, .icon-facebook:before {
+.icon-ghost:before,
+.icon-feed:before,
+.icon-twitter:before,
+.icon-google-plus:before,
+.icon-facebook:before {
   font-family: 'icons';
   speak: none;
   font-style: normal;
@@ -218,7 +238,8 @@ body {
   background-color: #333f49;
   /*color: #3A4145;*/ }
 
-::-moz-selection, ::selection {
+::-moz-selection,
+::selection {
   color: #222;
   background: #D6EDFF;
   text-shadow: none; }
@@ -282,6 +303,7 @@ dl dt {
   white-space: nowrap;
   font-weight: bold;
   margin-bottom: 1em; }
+
 dl dd {
   margin-left: 200px;
   margin-bottom: 1em; }
@@ -445,7 +467,7 @@ a.fa {
   text-decoration: none;
   color: inherit; }
 
-.full-img {
+.post-content img {
   max-width: 100%; }
 
 .col-aside {
@@ -563,6 +585,7 @@ h1.blog-title {
     text-decoration: none; }
     .main-nav li a:hover {
       color: #fab4b4; }
+
 .main-nav .fa {
   margin-right: 2px;
   font-size: 1.6rem; }
@@ -703,6 +726,7 @@ main {
   color: #444; }
   .post-share .fa:hover {
     color: #f76161; }
+
 .post-share h6 {
   font-size: 18px;
   font-size: 1.8rem;
@@ -714,6 +738,7 @@ main {
   font-size: 1.5rem;
   text-decoration: none;
   font-style: italic; }
+
 .post-tags .fa-tags {
   font-size: 14px;
   font-size: 1.4rem;
@@ -788,44 +813,35 @@ main {
     box-sizing: border-box;
     height: auto;
     min-height: 240px; }
-
   h1.blog-title, .home-template h1.blog-title {
     font-size: 44px;
     font-size: 4.4rem;
     letter-spacing: -1px;
     margin: 0 20px; }
-
   .blog-description {
     font-size: 17px;
     font-size: 1.7rem;
     line-height: 1.5em; }
-
   h1 {
     font-size: 48px;
     font-size: 4.8rem;
     text-indent: -2px; }
-
   h2 {
     font-size: 38px;
     font-size: 3.8rem; }
-
   h3 {
     font-size: 33px;
     font-size: 3.3rem; }
-
   h4 {
     font-size: 28px;
     font-size: 2.8rem; }
-
   .post-template .post {
     padding-bottom: 1rem; }
   .post-template .post-header {
     padding: 40px 0; }
-
   .author-info {
     width: 70%;
-    margin-left: 0; }
- }
+    margin-left: 0; } }
 
 /* ==========================================================================
    6. Media Queries - Smaller than 600px
@@ -833,46 +849,36 @@ main {
 @media only screen and (max-width: 600px) {
   .home-template .header-container, .home-template .site-head {
     height: 240px; }
-
   .blog-logo img {
     max-height: 80px; }
-
   .inner {
     width: auto;
     padding: 0 6%; }
-
   .blog-title {
     font-size: 30px;
     font-size: 3rem; }
-
   .blog-description {
     font-size: 1.5px;
     font-size: 1.5rem; }
-
   h1, h2 {
     font-size: 30px;
     font-size: 3rem;
     line-height: 1.1em;
     letter-spacing: -1px; }
-
   h3 {
     font-size: 28px;
     font-size: 2.8rem; }
-
   h4 {
     font-size: 23px;
     font-size: 2.3rem; }
-
   .post, .post-item {
     width: auto;
     font-size: 1em;
     line-height: 1.5em;
     letter-spacing: 0.5px;
     padding: 40px 0; }
-
   .post-item-header .col-aside {
     display: none; }
-
   .post-item-title {
     width: 100%;
     display: block;
@@ -880,63 +886,49 @@ main {
     font-size: 2.8rem;
     /*text-align: center;*/
     margin-bottom: 30px; }
-
   .post-preview .col-aside, .post-excerpt {
     display: block;
     width: 100%;
     margin: 0; }
-
   .post-item-time {
     padding-bottom: 5px; }
-
   .post-template .post-header {
     padding: 20px 0 0; }
     .post-template .post-header hr {
       margin: 25px 0 20px; }
-
   .post-content img {
     padding: 0; }
-
   .post-meta {
     font-size: 14px;
     font-size: 1.4rem; }
-
   .pagination {
     padding: 20px 10px;
     font-size: 13px;
     font-size: 1.3rem; }
-
   .post-title {
     font-size: 36px;
     font-size: 3.6rem; }
-
   .site-footer {
     padding-top: 50px;
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 1.5em; }
-
   .poweredby {
     margin-top: 10px; }
-
   .post-share {
     margin-bottom: 20px; }
     .post-share h6 {
       font-size: 16px;
       font-size: 1.6rem; }
-
   .post-tags {
     margin-bottom: 0; }
-
   .post-author {
     margin-top: 40px;
     padding: 25px 0 15px; }
-
   .author-image-container {
     width: 80px;
     display: block;
     margin: 0 auto; }
-
   .author-info {
     display: block;
     width: 100%;
@@ -947,13 +939,10 @@ main {
       margin-bottom: 15px;
       padding-bottom: 15px;
       border-bottom: solid 1px #eaeaea; }
-
   .author-image {
     width: 80px;
     border-radius: 45px; }
-
   #disqus_thread {
-    margin: 30px 0; }
- }
+    margin: 30px 0; } }
 
 /*# sourceMappingURL=screen.css.map */

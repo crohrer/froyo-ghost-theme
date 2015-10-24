@@ -46,7 +46,7 @@ a.fa {
     color: inherit;
 }
 
-.full-img {
+.post-content img {
     max-width: 100%;
 }
 
@@ -63,6 +63,7 @@ a.fa {
     font-size: 1.3rem !important;
     border-radius: 3px;
     text-decoration: none;
+
     &:hover {
         color: #fff;
         background-color: #333f49;

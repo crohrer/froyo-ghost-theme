@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "Adrian Norman",
   "devDependencies": {
-    "grunt-sass": "~0.17.0",
+    "grunt-sass": "~1.0.0",
     "grunt": "~0.4.5",
     "grunt-task-loader": "~0.3.0",
     "grunt-contrib-watch": "~0.6.1"
